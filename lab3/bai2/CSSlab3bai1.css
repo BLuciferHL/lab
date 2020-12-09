@@ -1,0 +1,22 @@
+.heading {
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.general{
+    font-style: oblique ;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.places{
+    text-decoration: underline;
+    font-family: cursive ;
+    font-size: medium;
+    text-transform: capitalize;
+}
+*{
+    font-size: small;
+    font-family: Verdana, Tahoma, sans-serif;
+}

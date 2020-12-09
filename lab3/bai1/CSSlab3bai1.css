@@ -1,0 +1,22 @@
+.section{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sub_section{
+    text-indent: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+h2 {
+    padding-left: 2px;
+    word-spacing: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+h3 {
+    padding-left: 30px;
+    word-spacing: 2px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
