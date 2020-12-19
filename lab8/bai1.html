@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purchase Order Form</title>
+	<style type="text/css">
+		h2{
+			width: 50%;
+			border: 1px solid #000;
+			color: blue;
+			background-color: #70b2cf;
+			padding: 0 0 0 10px;
+			margin: 0;
+		}
+		h4{
+			color: blue;
+			margin: 20px 0 0 0;
+			padding-left: 20px;
+		}
+		.boxout{
+			width: 90%;
+			border: 1px solid #099ae3;
+			background-color: #19cdd4;
+			padding: 5px;
+			margin: 0 auto;
+
+		}
+		.elementsmall{
+			border: 1px solid #099ae3;
+			background-color: #c0ebed;
+			width: 30%;
+			height: 15px;
+			margin: 1px;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 60%;background-color: #82e8b5;margin: 0 auto;padding: 10px;border: 1px solid #000;">
+		<h2>Purchase Order Form</h2>
+		<div>
+			<h4>Produc infomation</h4>
+			<div class="boxout">
+				<div class="elementsmall">Product</div>
+				<select id="product_name"></select>
+				<div class="elementsmall">Unit Price ($)</div>
+				<div class="elementsmall">Quatity</div>
+				<div class="elementsmall">Total Price</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var productList = {
+			Comfort Spleeper,
+			Morgan Kids Bed,
+			Entertainment Cabinet
+		}
+		var creditcardList = {
+			VISA,
+			Master Card,
+			American Express
+		}
+	</script>
+</body>
+</html>

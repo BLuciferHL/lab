@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript tutorial</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1 style="text-align: center; color: white; background-color: blue" class="class_welcome" id="id_welcome" name="name_welcome" onclick="showAlert()">Welcome to learn Javascript</h1>
+	<h1 style="text-align: center; color: white; background-color: blue" class="class_welcome" id="id_welcome_2" name="name_welcome">Welcome to learn Javascript</h1>
+
+	<input type="text" name="fullname" id="fullname_id" placeholder="Enter name" size="50" value="" onchange="changeData()" onkeyup="updata()">
+	<br/>
+	<br/><br/><br/>
+
+	<script type="text/javascript">
+		function showAlert() {
+			alert('Xin chao!!!')
+		}
+
+		function changeData() {
+			var fullnameTag = document.getElementById('fullname_id')
+			console.log(fullnameTag.value)
+		}
+
+		function updata() {
+			var fullnameTag = document.getElementById('fullname_id')
+			console.log(fullnameTag.value)
+
+			//chen du lieu vao 1 the
+			var h1Tag = document.getElementById('id_welcome')
+			// h1Tag.innerHTML = fullnameTag.value
+			h1Tag.innerHTML += '<br/>' + fullnameTag.value
+		}
+
+		var h1Tag = document.getElementById('id_welcome')
+		console.log(h1Tag)
+		console.log(h1Tag.id)
+		console.log(h1Tag.name)
+		console.log(h1Tag.style)
+		h1Tag.style.color = 'red'
+		h1Tag.style.backgroundColor = "green"
+
+		var h1List = document.getElementsByClassName('class_welcome')
+		console.log(h1List)
+		for (var i = 0; i < h1List.length; i++) {
+			h1List[i].style.color = 'pink'
+		}
+
+		var fullnameTag = document.getElementById('fullname_id')
+		// fullnameTag.value = "TRAN VAN DIEP"
+		console.log(fullnameTag.value)
+
+
+		//Cach bieu dien object trong JS
+		var std = {
+			"name": "TRAN VAN A",
+			"age": 20,
+			"email": "tranvana@gmail.com",
+			"gender": "Nam"
+		}
+		//truy xuat du lieu
+		console.log(std.name)
+		//Thay doi du lieu
+		std.age = 65
+		console.log(std.age)
+
+		//Array trong JS
+		//Phan 1: Khai bao 1 mang rong
+		var arr1 = []
+		var arr2 = [1, 6, 3]
+		//Phan 2: Them 1 phan tu moi vao mang
+		arr1.push(6)
+		arr1.push(2)
+		arr1.push(8)
+		console.log(arr1)
+		//Phan 3: Truy cap vao cac phan tu trong mang
+		//Length: arr1.length
+		//Index: 0 -> length - 1
+		console.log("Length: " + arr1.length)
+		console.log(arr1[1])
+		//duyet qua cac phan tu
+		for(i=0; i<arr1.length; i++) {
+			console.log("value -> " + arr1[i])
+		}
+		//Phan 4: Xoa cac phan tu trong mang
+		arr1.splice(1, 0, 10000, 90000)
+
+		console.log(arr1)
+		//Ung dung mang -> quan ly danh sach sinh vien
+		var studentList = []
+		var s1 = {
+			"name": "TRAN VAN A",
+			"age": 20,
+			"email": "tranvana@gmail.com",
+			"gender": "Nam"
+		}
+		studentList.push(s1)
+		s2 = {
+			"name": "TRAN VAN B",
+			"age": 26,
+			"email": "tranvanb@gmail.com",
+			"gender": "Nam"
+		}
+		studentList.push(s2)
+
+		console.log(studentList)
+
+
+	</script>
+	<table border="1" cellspacing="3" cellpadding="3">
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Email</th>
+				<th>Gender</th>
+			</tr>
+		</thead>
+		<tbody>
+<script type="text/javascript">
+	for (i=0;i<studentList.length;i++) {
+		document.write(`<tr>
+							<td>${i+1}</td>
+							<td>${studentList[i].name}</td>
+							<td>${studentList[i].age}</td>
+							<td>${studentList[i].email}</td>
+							<td>${studentList[i].gender}</td>
+						</tr>`)
+
+		document.write('<tr>'+
+							'<td>'+(i+1)+'</td>'+
+							'<td>'+studentList[i].name+'</td>'+
+							'<td>'+studentList[i].age+'</td>'+
+							'<td>'+studentList[i].email+'</td>'+
+							'<td>'+studentList[i].gender+'</td>'+
+						'</tr>')
+	}
+</script>
+		</tbody>
+	</table>
+</body>
+</html>
