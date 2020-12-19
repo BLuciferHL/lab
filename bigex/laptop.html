@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGDĐ - Điện thoại, Laptop, Đồng hồ chính hãng</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-width: 1024px;
+            overflow-x: hidden;
+            background-color:#89c2e0;
+            background-size: 1920px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment:scroll;
+        }
+        header{
+            position: absolute;
+            top: 0;
+            min-width: 1200px;
+            width: 100%;
+            height: 80px;
+            background-color: #FED101;
+        }
+        header nav{
+            background-color: #000;
+            height: 40px;
+            overflow: hidden;
+        }
+        .logo{
+            float: left;
+            width: 165px;
+            display: block;
+            padding: 14px 0 11px 5px;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        .wrap-main{
+            width:1200px;
+            height:50px;
+            background:#000;
+            margin:auto;
+            position:relative;
+            display:flex;
+        }
+        header span{
+            color: #fff;
+            font-size: 11px;
+            display: block;
+            margin-bottom: 0px;
+            padding-top: 3px;
+        }
+        header .logo {
+            padding: 6px 0 4px 5px;
+        }
+        select {
+            width: 100%;
+            border: none;
+            border-radius: 1px;
+            background-color: #000;
+            color: #FED101;
+        }
+        input[type=text] {
+            width: 110%;
+            box-sizing: border-box;
+            border-radius: 7px;
+            font-size: 12px;
+            background-color: white;
+            background-image: url(data/searchicon.png);
+            background-size: 20px;
+            background-position: 175px 6px; 
+            background-repeat: no-repeat;
+            padding: 9px 14px 9px 14px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        header .menu-info{
+            width: 673px !important;
+            float: right;
+        }
+        header .menu-info> * {
+            display: inline-block;
+            vertical-align: middle;
+            color: #fff;
+            font-size: 12px;
+        }
+        header .menu-info > a.a1{
+            width: 97px;
+            border: 1px solid #8F8F8F;
+            border-radius: 4px;
+            height: 30px;
+            line-height: 30px;
+            margin: 4px 0 0 30px;
+            background-image: url(data/cart.jpg);
+            background-size: 37px;
+            background-repeat: no-repeat;
+            background-position: 4px 6px;
+        }
+        header .menu-info > a.a2{
+            padding:2px 10px 0 10px;
+            line-height: 1.3;
+            width: 75px;
+            text-align: center;
+        }
+        header .menu-info > a.liveevent{
+            float: none;
+            color: #FFE66B;
+            max-width: 200px;
+            border-left: 1px solid #232323;
+            border-right: 1px solid #232323;
+            position: relative;
+            padding: 0 0 0 40px;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        header .menu-info > a.liveevent .text{
+            white-space: normal;
+            overflow: visible;
+            max-height: 34px;
+            display: inline-block;
+            text-decoration: none;
+            color: #FFE66B;
+            line-height: 1.3;
+            margin-top: 0;
+            padding-top: 0; 
+        }
+        header .menu-info > div > a.mn-new{
+            line-height: 1.3;
+            text-align: center;
+            padding: 6px 11px 0 11px;
+            height: 34px;
+            color: white;
+        }
+        header .menu-info > div > div, header .menu-info > div > a{
+            padding: 0 11px;
+            border-left: 1px solid #232323;
+            color: #fff;
+            height: 40px;
+            line-height: 40px;
+            float: left;
+        }
+        header .menu-info > div > a:hover {
+            background-color: white;
+            color: black;
+        }
+        .wrap-nav{
+            background-color: #FED101;
+            height: 40px;
+            overflow: hidden;
+            padding: 0;
+
+        }
+        header .wrap-nav > div{
+            max-width: 1200px;
+            margin: auto;
+            min-width: 1024px;
+            width: 100%;
+        }
+        header .wrap-nav > div > a{
+            padding: 2px 12px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        div a.sphone, div a.laptop, div a.phukien, div a.dongho, div a.maydoitra, div a.sim, div a.utility{
+            width: 105px;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: 5px 6px;
+            text-align: center;
+            border-right: 1px;
+            position: relative;
+
+        }
+        div a.pc{
+            width: 120px;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: 5px 6px;
+            text-align: center;
+            border-right: 1px;
+            position: relative;
+        }
+        div a.tablet{
+            width: 90px;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: 5px 6px;
+            text-align: center;
+            border-right: 1px;
+            position: relative;
+        }
+        header .wrap-nav > div > a:hover{
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body style="background-image: url(data/hinh-nen-le-noel.jpg);">
+    <header>
+        <nav>
+            <div class="wrap-main">
+                <a class="logo" href="tgdd.html"><img style="position: absolute;top: 5px;left:0; width:142px;background-color: #000;" src="data/logo.png"></a>
+                <div id="h-province">
+                    <span>Xem giá, khuyến mãi tại:</span>
+                    <div>
+                        <form>
+                            <select id="province" name="province">
+                              <option>Hà Nội</option>
+                              <option>Hồ Chí Minh</option>
+                              <option>Cần Thơ</option>
+                              <option>Đà Nẵng</option>
+                              <option>Hải Phòng</option>
+                              <option>Bà Rịa - Vũng Tàu</option>
+                              <option>Bắc Giang</option>
+                              <option>Bắc Kạn</option>
+                              <option>Bạc Liêu</option>
+                              <option>Bắc Ninh</option>
+                              <option>Bến Tre</option>
+                              <option>Bình Định</option>
+                              <option>Bình Dương</option>
+                              <option>Bình Phước</option>
+                              <option>Bình Thuận</option>
+                              <option>Cà Mau</option>
+                              <option>Cao Bằng</option>
+                              <option>Đắk Lắk</option>
+                              <option>Đắk Nông</option>
+                              <option>Điện Biên</option>
+                              <option>Đồng Nai</option>
+                              <option>Đồng Tháp</option>
+                              <option>Gia Lai</option>
+                              <option>Hà Giang</option>
+                              <option>Hà Nam</option>
+                              <option>Hà Tĩnh</option>
+                              <option>Hải Dương</option>
+                              <option>Hậu Giang</option>
+                              <option>Hòa Bình</option>
+                              <option>Hưng Yên</option>
+                              <option>Khánh Hòa</option>
+                              <option>Kiên Giang</option>
+                              <option>Kon Tum</option>
+                              <option>Lai Châu</option>
+                              <option>Lâm Đồng</option>
+                              <option>Lạng Sơn</option>
+                              <option>Lào Cai</option>
+                              <option>Long An</option>
+                              <option>Nam Định</option>
+                              <option>Nghệ An</option>
+                              <option>Ninh Bình</option>
+                              <option>Ninh Thuận</option>
+                              <option>Phú Thọ</option>
+                              <option>Quảng Bình</option>
+                              <option>Quảng Nam</option>
+                              <option>Quảng Ngãi</option>
+                              <option>Quảng Ninh</option>
+                              <option>Quảng Trị</option>
+                              <option>Sóc Trăng</option>
+                              <option>Sơn La</option>
+                              <option>Tây Ninh</option>
+                              <option>Thái Bình</option>
+                              <option>Thái Nguyên</option>
+                              <option>Thanh Hóa</option>
+                              <option>Thừa Thiên Huế</option>
+                              <option>Tiền Giang</option>
+                              <option>Trà Vinh</option>
+                              <option>Tuyên Quang</option>
+                              <option>Vĩnh Long</option>
+                              <option>Vĩnh Phúc</option>
+                              <option>Yên Bái</option>
+                              <option>Phú Yên</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <form id="search-site" action="/tim kiem" method="get">
+                    <input type="text" name="search" placeholder="Bạn tìm gì...">
+                </form>
+                <div class="menu-info" style="display: flex;">
+                    <a href="cart.html" class="a1">
+                        <span style="padding-left: 40px; font-size: 13px;">Giỏ hàng</span>
+                    </a>
+                    <a href="lich-su-mua-hang.html" class="a2">LỊCH SỬ MUA HÀNG</a>
+                    <a class="liveevent" href="#" target="_blank">
+                        <span class="text">
+                            <img style="width: 82px;display: inline-block;vertical-align: middle;" src="data/logo-bhx.png">
+                            <b style="display: inline-block;vertical-align: middle;margin-left: 2px;width: 100px;">
+                                <p style="font-weight: normal;">giảm</p> đến 50% +<br>5 lần FREEship
+                            </b>
+                        </span>
+                    </a>
+                    <div>
+                        <a class="mn-new" href="tin-tuc.html">24h<br> Công nghệ</a>
+                        <a class="mn-faq" href="hoi-dap.html">Hỏi đáp</a>
+                        <a class="mn-gameapp" href="game-app.html">Game App</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="wrap-nav">
+          <div>
+          <a style="background-image: url(data/phone.png);" class="sphone" href="dtdd.html">Điện thoại</a>
+          <a style="background-image: url(data/laptop.png);" class="laptop" href="laptop.html">Laptop</a>
+          <a style="background-image: url(data/tablet.png);" class="tablet" href="#">Tablet</a>
+          <a style="background-image: url(data/headphones.png);" class="phukien" href="#">Phụ kiện</a>
+          <a style="background-image: url(data/watch.png);" class="dongho" href="#">Đồng hồ</a>
+          <a style="background-image: url(data/pc.png);" class="pc" href="">PC, Máy in</a>
+          <a class="maydoitra" href="#">Máy cũ giá rẻ</a>
+          <a class="sim" href="#">Sim, Thẻ Cào</a>
+          <a class="utility" href="#">Trả góp, điện nước</a>
+        </div>
+        </div>
+    </header>
+    <main>
+      
+        
+
+    </main>
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
