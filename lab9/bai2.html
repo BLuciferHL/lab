@@ -15,14 +15,42 @@
 			display: inline-flex;
 			text-align: center;
 		}
+		button{
+			background-color: #CCCCCC;
+			font-family: Arial;
+			text-align: center;
+			display: inline-flex;
+		}
+		.imgsmall{
+			width: 15px;
+		}
+
 	</style>
 </head>
 <body>
 	<div class="formbook">
 		<div class="tittle">
-			<img src="data/regis.png">
-			<p>Phiếu mượn sách</p>
+			<img style="width: 75px;" src="data/regis.png">
+			<h4 style="margin: 30px 0 0 0;">Phiếu mượn sách</h4>
 		</div>
+		<div>
+			<div>Mã sinh viên</div>
+			<input type="" name="">
+			<div>Họ và tên</div>
+			<input type="" name="">
+			<div>Loại sách</div>
+				<select>
+					<option>--Chọn loại sách--</option>
+				</select>
+			<div>Tên sách</div>
+			<input type="" name="">
+			<div>Ngày mượn</div>
+			<input type="" name="">
+			<div>Ngày trả</div>
+			<input type="" name="">
+		</div>
+		<button><img class="imgsmall" src="data/log_in.png">Đăng ký</button>
+		<button><img class="imgsmall" src="data/cancel.png"> Nhập lại</button>
 	</div>
 </body>
 </html>
